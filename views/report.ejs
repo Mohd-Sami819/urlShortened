@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student report card</h1>
+    <% students.forEach(function (student) { %>
+        <li>
+            <br>
+            <p>
+                Name: <%= student.name %>
+            </p>
+            <p>
+                Grade: <%= student.grade%>
+            </p>
+            <p>
+                Favorite Subject: <%= student.favoriteSubject%>
+            </p>
+        </li>
+        <% }) %>
+</body>
+</html>
